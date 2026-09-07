@@ -18,7 +18,6 @@ class BotHandlers:
     
     @staticmethod
     async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Send welcome message"""
         welcome_text = """
 🎯 *Welcome to DondreeBot!* 🎯
 
@@ -44,7 +43,6 @@ Simply click on a command and follow the instructions!
     
     @staticmethod
     async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Send help message"""
         help_text = """
 📚 *Detailed Help Guide*
 
