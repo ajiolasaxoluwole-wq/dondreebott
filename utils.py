@@ -9,9 +9,7 @@ class CalculatorUtils:
     def basic_calc(expression: str) -> str:
         """Perform basic arithmetic operations"""
         try:
-            # Replace mathematical symbols
             expression = expression.replace('×', '*').replace('÷', '/')
-            # Only allow safe characters
             if not re.match(r'^[\d+\-*/().\s]+$', expression):
                 return "❌ Invalid expression! Use only numbers and + - × ÷ ( )"
             
